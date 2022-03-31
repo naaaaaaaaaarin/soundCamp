@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+:root {
+  /* color */
+  --main-color: #3E5E8D;
+  --font-color: #212121
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+.w1250 {
+  width: 1250px;
+  margin: 0 auto;
+}
+.line {
+  width: 64px;
+  border: 2px solid var(--main-color);
+  background-color: var(--main-color);
+  margin: 0 auto; 
+}
+
+button {
+  border: none;
+}

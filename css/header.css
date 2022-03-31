@@ -1,0 +1,27 @@
+header {
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+header img {
+  width: 229.96px;
+}
+header ul {
+  display: flex;
+}
+header ul li{
+  margin-right: 57px;
+}
+header ul li a{
+  color: #212121;
+}
+header ul li a:hover{
+  font-weight: bold;
+  color: var(--main-color);
+  /* color: #3E5E8D; */
+}
+header ul li:last-child{
+  margin-right: 0;
+}
