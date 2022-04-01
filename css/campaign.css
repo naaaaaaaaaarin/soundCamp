@@ -1,0 +1,54 @@
+#campaign {
+  background-image: url(../images/campaign.png);
+  height: 700px;
+  background-size: cover;
+  position: relative;
+}
+#campaign div {
+  position: absolute;
+  top: 240px;
+  left: 335px;
+  color: var(--font-color);
+}
+#campaign div h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+}
+#campaign div > p {
+  margin: 20px 0 46px 0;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+}
+#campaign button {
+  display: flex;
+  border: 1px solid var(--font-color);
+  padding: 12px 21px;
+}
+#campaign button:hover {
+  background-color: var(--main-color);
+}
+#campaign button:hover p {
+  color: #fff;
+}
+#campaign button p {
+  font-size: 18px;
+  color: var(--font-color);
+  margin-right: 14px;
+}
+#campaign button img {
+  transform: translateY(5px);
+}
+#campaign button:hover img:nth-child(2) {
+  opacity: 0;
+}
+#campaign button img:last-child {
+  position: absolute;
+  left: 185px;
+  opacity: 0;
+}
+#campaign button:hover img:last-child {
+  opacity: 1;
+}

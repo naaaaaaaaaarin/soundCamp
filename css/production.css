@@ -1,5 +1,5 @@
 #production {
-  margin-top: 180px;
+  margin: 180px auto 170px;
   text-align: center;
 }
 #production h2 {
@@ -11,8 +11,23 @@
 #production ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
-#production ul li {
-  flex-direction: start;
+#production ul li h4 {
+  margin-top: 37px;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: var(--main-color);
+  width: 264px;
+  height: 49px;
+  line-height: 49px;
+  color: #fff;
+  border-radius: 28px;
+  margin-bottom: 34px;
+}
+#production ul li p {
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--font-color);
+  letter-spacing: -0.02em;
 }

@@ -7,6 +7,9 @@
   padding: 100px 0 74px 0;
   color: var(--font-color);
 }
+#portfolio .text .line {
+  margin: 0 auto;
+}
 #portfolio .text p:nth-child(1) {
   font-size: 25px;
   line-height: 36px;

@@ -1,0 +1,40 @@
+#map {
+    display: flex;
+}
+#map .map {
+    width: 50%;
+}
+#map .info {
+    margin: 72px 0 77px 97px;
+}
+#map .info::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#map .info .line {
+    float: left;
+    width: 48px;
+    margin: 10px 17px 0 0;
+    border: 5px solid var(--main-color);
+}
+#map .info div {
+    float: right;
+}
+#map .info h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--font-color);
+}
+#map .info p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--font-color);
+    margin: 45px 0 15px;
+}
+#map .info p:nth-child(3) {
+    font-size: 18px;
+    font-weight: 500;
+    color: #a4a4a4;
+    line-height: 26px;
+}

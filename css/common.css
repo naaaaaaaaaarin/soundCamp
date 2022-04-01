@@ -18,13 +18,19 @@ a {
   width: 1250px;
   margin: 0 auto;
 }
+.w1218 {
+  width: 1218px;
+  margin: 0 auto;
+}
 .line {
   width: 64px;
   border: 2px solid var(--main-color);
   background-color: var(--main-color);
-  margin: 0 auto; 
 }
 
 button {
   border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
 }
