@@ -47,6 +47,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  background-color: #fff;
 }
 #portfolio li:nth-child(5),
 #portfolio li:nth-child(10),
@@ -79,10 +80,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90%;
+  width: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: all .3s;
 }
 #portfolio li a h4 {
   width: 100%;
@@ -94,11 +93,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
+  opacity: 0;
 }
 #portfolio li:hover a::before{
-  opacity: .7;
+  opacity: .9;
 } 
 #portfolio li:hover h4 {
+  opacity: 1;
   color: #fff;
 }
 #portfolio li:hover img {
@@ -106,8 +107,12 @@
 }
 #portfolio .btn {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 100px auto 0;
-  padding: 12px 43px;
+  /* padding: 12px 43px; */
+  width: 200px;
+  height: 50px;
   background-color: var(--main-color);
 }
 #portfolio .btn p {
@@ -117,4 +122,6 @@
 }
 #portfolio .btn img {
   transform: translateY(5px);
+  width: 16px;
+  height: 24px;
 }

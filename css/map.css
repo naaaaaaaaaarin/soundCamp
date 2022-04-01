@@ -31,6 +31,7 @@
     font-weight: 500;
     color: var(--font-color);
     margin: 45px 0 15px;
+    line-height: 29px;
 }
 #map .info p:nth-child(3) {
     font-size: 18px;

@@ -13,6 +13,8 @@ body {
 a {
   text-decoration: none;
   outline: none;
+  color: inherit;
+  cursor: pointer;
 }
 .w1250 {
   width: 1250px;
@@ -33,4 +35,5 @@ button {
   background-color: transparent;
   padding: 0;
   cursor: pointer;
+  transition: all .3s;
 }

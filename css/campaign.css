@@ -22,33 +22,38 @@
   line-height: 32px;
   letter-spacing: -0.02em;
 }
-#campaign button {
+#campaign a {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--font-color);
-  padding: 12px 21px;
+  width: 200px;
+  height: 50px;
 }
-#campaign button:hover {
+#campaign a:hover {
   background-color: var(--main-color);
 }
-#campaign button:hover p {
-  color: #fff;
-}
-#campaign button p {
+#campaign a p {
   font-size: 18px;
   color: var(--font-color);
   margin-right: 14px;
 }
-#campaign button img {
-  transform: translateY(5px);
+#campaign a:hover p {
+  color: #fff;
 }
-#campaign button:hover img:nth-child(2) {
+#campaign a img {
+  transform: translateY(1px);
+  width: 9px;
+  height: 16px;
+}
+#campaign a:hover img:nth-child(2) {
   opacity: 0;
 }
-#campaign button img:last-child {
+#campaign a img:last-child {
   position: absolute;
-  left: 185px;
+  left: 172px;
   opacity: 0;
 }
-#campaign button:hover img:last-child {
+#campaign a:hover img:last-child {
   opacity: 1;
 }

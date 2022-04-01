@@ -19,25 +19,32 @@ main .text p:nth-child(2) {
   color: #65A2FB;
   margin-top: 20px;
 }
-main .btn p:nth-child(1) {
+main a p:nth-child(1) {
   font-size: 16px;
 }
-main .btn {
+main a {
   display: flex;
-  padding: 12px 26px;
+  justify-content: center;
+  align-items: center;
+  /* padding: 12px 26px; */
   border: 1px solid #fff;
   background-color: transparent;
   margin-top: 37px;
   cursor: pointer;
+  width: 200px;
+  height: 50px;
+  
 }
-main .btn:hover {
+main a:hover {
   background-color: var(--main-color);
 }
-main .btn p {
+main a p {
   font-size: 18px;
   color: #fff;
   margin-right: 20px;
 }
-main .btn img {
+main a img {
   transform: translateY(2px);
+  width: 9px;
+  height: 16px;
 }
