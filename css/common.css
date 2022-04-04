@@ -10,30 +10,39 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   outline: none;
   color: inherit;
   cursor: pointer;
 }
+
 .w1250 {
   width: 1250px;
   margin: 0 auto;
 }
+
 .w1218 {
   width: 1218px;
   margin: 0 auto;
 }
+
 .line {
   width: 64px;
   border: 2px solid var(--main-color);
   background-color: var(--main-color);
 }
 
-button {
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  cursor: pointer;
-  transition: all .3s;
+/* 스크롤 이벤트 (페이드인) */
+.sa {
+  opacity: 0;
+  transition: all 1s ease;
+}
+.sa-down {
+  transform: translate(0, -100px);
+}
+.sa.show {
+  opacity: 1;
+  transform: none;
 }
