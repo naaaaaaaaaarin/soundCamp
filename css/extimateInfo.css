@@ -5,7 +5,7 @@
 }
 #estimateInfo .estimate,
 #estimateInfo .info {
-  width: 595px;
+  width: 47.67%;
 }
 #estimateInfo div {
   display: flex;
@@ -43,5 +43,60 @@
 }
 #estimateInfo li p {
   color: #a4a4a4;
+}
+
+@media screen and (max-width:768px) {
+  #estimateInfo {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #estimateInfo .estimate,
+  #estimateInfo .info {
+    width: 100%;
+  }
+  #estimateInfo .estimate {
+    margin-bottom: 50px;
+  }
+  #estimateInfo div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #bcbcbc;
+    padding-bottom: 22px;
+  }
+  #estimateInfo div h3 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  #estimateInfo div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    background-color: var(--font-color);
+    font-size: 14px;
+  }
+  #estimateInfo div p {
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+  }
+  #estimateInfo ul {
+    margin-top: 22px;
+  }
+  #estimateInfo li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+  }
+  #estimateInfo li a {
+    color: var(--font-color);
+  }
+  #estimateInfo li p {
+    color: #a4a4a4;
+  }
 }
 

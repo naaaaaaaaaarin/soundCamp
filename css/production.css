@@ -13,12 +13,15 @@
   justify-content: space-between;
   align-items: baseline;
 }
+#production ul li:nth-child(odd) {
+  width: 21.12%;
+}
 #production ul li h4 {
   margin-top: 37px;
   font-size: 28px;
   font-weight: bold;
   background-color: var(--main-color);
-  width: 264px;
+  width: 100%;
   height: 49px;
   line-height: 49px;
   color: #fff;
@@ -30,4 +33,87 @@
   line-height: 28px;
   color: var(--font-color);
   letter-spacing: -0.02em;
+}
+
+@media screen and (max-width:768px) {
+  #production {
+    margin: 130px auto 134px;
+    text-align: center;
+  }
+  #production h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--font-color);
+    margin-bottom: 55px;
+  }
+  #production ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  #production ul li:nth-child(odd) {
+    width: 21.12%;
+  }
+  #production ul li h4 {
+    margin-top: 37px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 28px;
+    margin-bottom: 12px;
+  }
+  #production ul li p {
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--font-color);
+    letter-spacing: -0.02em;
+  }
+}
+
+@media screen and (max-width:640px) {
+  #production {
+    margin: 130px auto 134px;
+    text-align: center;
+  }
+  #production h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--font-color);
+    margin-bottom: 45px;
+  }
+  #production ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #production ul li:nth-child(odd) {
+    width: 50.69%;
+    margin: 33px 0;
+  }
+  #production ul li:nth-child(even) {
+    transform: rotate(90deg);
+  }
+  #production ul li h4 {
+    margin-top: 49px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 28px;
+  }
+  #production ul li p {
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--font-color);
+    letter-spacing: -0.02em;
+  }
 }

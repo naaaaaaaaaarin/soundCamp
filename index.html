@@ -26,47 +26,43 @@
 
 <body>
   <!-- Header -->
-  <header class="w1250">
-    <div class="w">
+  <header>
+    <div class="w1250">
       <div class="container">
         <h1>
-          <img src="./images/soundcamp_logo.png" alt="사운드캠프 로고">
+          <a href="./index.html">
+            <img src="./images/soundcamp_logo.png" alt="사운드캠프 로고" />
+          </a>
         </h1>
-        <nav>
+        <nav class="pc">
           <ul>
             <li><a href="#">회사소개</a></li>
-            <li>
-              <a href="#">포트폴리오</a>
-              <div class="sub">
-                <div><a href="#">라디오광고·방송광고</a></div>
-                <div><a href="#">광고음악·로고송</a></div>
-                <div><a href="#">교가·시가</a></div>
-                <div><a href="#">성우녹음·더빙</a></div>
-                <div><a href="#">사운드디자인·음향</a></div>
-              </div>
-            </li>
-            <li><a href="#">로고송</a></li>
+            <li><a href="./portfolio.html">포트폴리오</a></li>
             <li><a href="#">홈페이지</a></li>
             <li><a href="#">영상</a></li>
             <li><a href="#">선거용품</a></li>
             <li><a href="#">고객센터</a></li>
           </ul>
         </nav>
-      </div>
-      <div class="sideMenu">
-        <input type="checkbox" id="sideHam">
-        <label for="sideHam">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
+        <nav class="mobile">
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="./portfolio.html">포트폴리오</a></li>
+            <li><a href="#">홈페이지</a></li>
+            <li><a href="#">영상</a></li>
+            <li><a href="#">선거용품</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </nav>
+        <div class="ham">
+          <div class="menu"></div>
+        </div>
       </div>
     </div>
   </header>
 
   <!-- Main -->
   <main>
-    <!-- <img src="./images/banner.png" alt="메인배너"> -->
     <div class="contents w1250 fadeIn">
       <div class="text">
         <p>더불어민주당 선거로고송</p>
@@ -250,7 +246,7 @@
           </a>
         </li>
       </ul>
-      <a class="btn sa sa-down">
+      <a href="./portfolio.html" class="btn sa sa-down">
         <p>포트폴리오</p>
         <img src="./images/arrow_2.png" alt="화살표">
       </a>
@@ -295,7 +291,7 @@
     </article>
     <article class="info">
       <div>
-        <h3>견적문의</h3>
+        <h3>공지사항</h3>
         <a href="#">
           <p>더보기</p>
         </a>
@@ -330,49 +326,51 @@
   </section>
 
   <!-- Section 03_Production -->
-  <section id="production" class="w1250">
+  <section id="production">
     <h2>선거 로고송 제작 진행 흐름도</h2>
-    <ul>
-      <li>
-        <img src="./images/production01.png" alt="음원선곡">
-        <h4>음원 선곡</h4>
-        <p>
-          대행업체 홈페이지<br />
-          www.soundcamp.net/1
-        </p>
-      </li>
-      <li><img src="./images/arrow_3.png" alt=""></li>
-      <li>
-        <img src="./images/production02.png" alt="발주">
-        <h4>발주</h4>
-        <p>
-          지역구 등 정보 입력<br />
-          발주서 출력 후<br />
-          이메일 전송<br />
-          webmaster@cdcamp.com
-        </p>
-      </li>
-      <li><img src="./images/arrow_3.png" alt=""></li>
-      <li>
-        <img src="./images/production03.png" alt="음원제작">
-        <h4>음원 제작</h4>
-        <p>
-          음원(곡, 가사)확인<br />
-          입금 확인 후<br />
-          음원 제작
-        </p>
-      </li>
-      <li><img src="./images/arrow_3.png" alt=""></li>
-      <li>
-        <img src="./images/production04.png" alt="납품">
-        <h4>음원 제작</h4>
-        <p>
-          검수 후<br />
-          웹하드 다운로드<br />
-          (000서울_김후보 폴더)
-        </p>
-      </li>
-    </ul>
+    <div class="w1250">
+      <ul>
+        <li>
+          <img src="./images/production01.png" alt="음원선곡">
+          <h4>음원 선곡</h4>
+          <p>
+            대행업체 홈페이지<br />
+            www.soundcamp.net/1
+          </p>
+        </li>
+        <li><img src="./images/arrow_3.png" alt=""></li>
+        <li>
+          <img src="./images/production02.png" alt="발주">
+          <h4>발주</h4>
+          <p>
+            지역구 등 정보 입력<br />
+            발주서 출력 후<br />
+            이메일 전송<br />
+            webmaster@cdcamp.com
+          </p>
+        </li>
+        <li><img src="./images/arrow_3.png" alt=""></li>
+        <li>
+          <img src="./images/production03.png" alt="음원제작">
+          <h4>음원 제작</h4>
+          <p>
+            음원(곡, 가사)확인<br />
+            입금 확인 후<br />
+            음원 제작
+          </p>
+        </li>
+        <li><img src="./images/arrow_3.png" alt=""></li>
+        <li>
+          <img src="./images/production04.png" alt="납품">
+          <h4>납품</h4>
+          <p>
+            검수 후<br />
+            웹하드 다운로드<br />
+            (000서울_김후보 폴더)
+          </p>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <!-- Section 04_Banner -->
@@ -385,13 +383,14 @@
       <a>
         <p>로고송 샘플듣기</p>
         <img src="./images/arrow_4.png" alt="화살표">
+        <img src="./images/arrow_5.png" alt="화살표">
       </a>
     </div>
   </section>
 
   <!-- Section 05_Campaign -->
   <section id="campaign">
-    <div class="sa sa-down">
+    <div class="sa sa-down w1250">
       <h3>선거 유세차량 알아보시나요?</h3>
       <p>
         후보님과 함께 뛰는 선거 유세의 동반자,<br />
@@ -404,6 +403,29 @@
       </a>
     </div>
   </section>
+  <section id="campaign_t">
+    <div class="sa sa-down w1250">
+      <div class="contents">
+        <div class="text">
+          <h3>선거 유세차량 알아보시나요?</h3>
+          <p>
+            후보님과 함께 뛰는<br />
+            선거 유세의 동반자,<br />
+            꼼꼼히 따져보고 결정하세요.
+          </p>
+          <a href="#">
+            <p>유세차량 알아보기</p>
+            <img src="./images/arrow_5.png" alt="화살표">
+            <img src="./images/arrow_4.png" alt="화살표">
+          </a>
+        </div>
+        <div>
+          <img src="./images/campaign_people.png" alt="사람이미지">
+        </div>
+      </div>
+    </div>
+    <div class="bus"></div>
+  </section>
 
   <!-- Section 06_map -->
   <section id="map">
@@ -415,11 +437,22 @@
     </article>
     <article class="info">
       <div class="line"></div>
-      <div>
+      <div class="info_pc">
         <h3>CONTACT US</h3>
         <p>
           서울특별시 강남구 삼성동 25-23 삼화빌딩 지하<br />
           주식회사 씨디캠프
+        </p>
+        <p>
+          TEL.02-548-1782<br />
+          FAX.02-549-5166
+        </p>
+      </div>
+      <div class="info_m">
+        <h3>CONTACT US</h3>
+        <p>
+          서울특별시 강남구 삼성동 25-23<br />
+          삼화빌딩 지하 주식회사 씨디캠프
         </p>
         <p>
           TEL.02-548-1782<br />
@@ -441,11 +474,11 @@
           <li>대표이사 : 안태준</li>
         </ul>
         <p>서울특별시 강남구 삼성동 25-23 삼화빌딩 지하</p>
-        <div>
+        <div class="tel">
           <p>TEL. 02-548-1782</p>
           <p>FAX. 02-549-5166</p>
         </div>
-        <p>Copyright&copy;2022 SOUNDCAMP all right reserved.</p>
+        <p class="copy">Copyright&copy;2022 SOUNDCAMP all right reserved.</p>
       </div>
     </div>
   </footer>

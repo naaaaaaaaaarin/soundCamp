@@ -2,12 +2,10 @@
   background-image: url(../images/campaign.png);
   height: 700px;
   background-size: cover;
-  position: relative;
+  background-repeat: no-repeat;
 }
 #campaign div {
-  position: absolute;
-  top: 240px;
-  left: 335px;
+  padding-top: 236px;
   color: var(--font-color);
 }
 #campaign div h3 {
@@ -50,10 +48,154 @@
   opacity: 0;
 }
 #campaign a img:last-child {
-  position: absolute;
-  left: 172px;
   opacity: 0;
+  transform: translateX(-9px);
 }
 #campaign a:hover img:last-child {
   opacity: 1;
+}
+#campaign_t {
+  display: none;
+}
+
+@media screen and (max-width:934px) {
+  #campaign {
+    display: none;
+  }
+  #campaign_t {
+    display: block;
+    margin-top: 223px;
+  }
+  #campaign_t .contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #campaign_t .contents .text h3 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  #campaign_t .contents .text > p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    margin: 23px 0 61px;
+  }
+  #campaign_t .contents .text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--font-color);
+    width: 200px;
+    height: 50px;
+  }
+  #campaign_t .contents .text a:hover {
+    background-color: var(--main-color);
+  }
+  #campaign_t .contents .text a p {
+    font-size: 18px;
+    color: var(--font-color);
+    margin-right: 14px;
+  }
+  #campaign_t .contents .text a:hover p {
+    color: #fff;
+  }
+  #campaign_t .contents .text a img {
+    transform: translateY(1px);
+    width: 9px;
+    height: 16px;
+  }
+  #campaign_t .contents .text a:hover img:nth-child(2) {
+    opacity: 0;
+  }
+  #campaign_t .contents .text a img:last-child {
+    opacity: 0;
+    transform: translateX(-9px);
+  }
+  #campaign_t .contents .text a:hover img:last-child {
+    opacity: 1;
+  }
+  #campaign_t .bus {
+    background-image: url(../images/campaign_bus.png);
+    height: 552px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width:425px) {
+  #campaign {
+    display: none;
+  }
+  #campaign_t {
+    display: block;
+    margin-top: 223px;
+  }
+  #campaign_t .contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #campaign_t .contents .text {
+    width: 50%;
+  }
+  #campaign_t .contents .text h3 {
+    font-size: 28px;
+    font-weight: 700;
+    word-break: keep-all;
+  }
+  #campaign_t .contents .text > p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    margin: 23px 0 61px;
+    word-break: keep-all;
+  }
+  #campaign_t .contents .text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--font-color);
+    width: 200px;
+    height: 50px;
+  }
+  #campaign_t .contents .text a:hover {
+    background-color: var(--main-color);
+  }
+  #campaign_t .contents .text a p {
+    font-size: 18px;
+    color: var(--font-color);
+    margin-right: 14px;
+  }
+  #campaign_t .contents .text a:hover p {
+    color: #fff;
+  }
+  #campaign_t .contents .text a img {
+    transform: translateY(1px);
+    width: 9px;
+    height: 16px;
+  }
+  #campaign_t .contents .text a:hover img:nth-child(2) {
+    opacity: 0;
+  }
+  #campaign_t .contents .text a img:last-child {
+    opacity: 0;
+    transform: translateX(-9px);
+  }
+  #campaign_t .contents .text a:hover img:last-child {
+    opacity: 1;
+  }
+  #campaign_t .contents div:last-child {
+    width: 152px;
+  }
+  #campaign_t .contents div:last-child img {
+    width: 100%;
+  }
+  #campaign_t .bus {
+    background-image: url(../images/campaign_bus.png);
+    height: 552px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -240px center;
+  }
 }

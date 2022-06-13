@@ -24,17 +24,212 @@
 	color: var(--main-color);
 	font-size: 14px;
 }
-#footer .footerInfo > p {
+#footer .footerInfo > p:nth-child(2) {
 	color: #737373;
 	margin: 20px 0 6px;
+  font-size: 14px;
 }
-#footer .footerInfo > div {
+#footer .footerInfo .tel {
 	display: flex;
 	color: #737373;
+  font-size: 14px;
 }
 #footer .footerInfo > div p:first-child {
 	margin-right: 20px;
 }
-#footer .footerInfo p:last-child {
+#footer .footerInfo .copy {
 	font-size: 12px;
+  margin-top: 12px;
+  color: #737373;
+}
+
+@media screen and (max-width:830px) {
+  #footer {
+    background-color: #f7f7f7;
+    height: 350px;
+    position: relative;
+  }
+  #footer .w1218 {
+    height: 112px;
+  }
+  #footer>div {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+  }
+  #footer>div img {
+    width: 230px;
+    height: 58.69px;
+  }
+  #footer .footerInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .footerInfo ul {
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-color);
+    font-size: 14px;
+  }
+  #footer .footerInfo ul li:nth-child(2) {
+    margin: 0 23px 0 25px;
+  }
+  #footer .footerInfo > p:nth-child(2) {
+    font-size: 14px;
+    color: #737373;
+    margin: 28px 0 10px;
+  }
+  #footer .footerInfo .tel {
+    display: flex;
+    font-size: 14px;
+    color: #737373;
+    margin-bottom: 28px;
+  }
+  #footer .footerInfo > div p:first-child {
+    margin-right: 20px;
+  }
+  #footer .footerInfo .copy {
+    font-size: 12px;
+    position: absolute;
+    top: 275px;
+    color: #737373;
+  }
+}
+@media screen and (max-width:491px) {
+  #footer {
+    background-color: #f7f7f7;
+    height: 350px;
+    position: relative;
+  }
+  #footer .w1218 {
+    height: 112px;
+  }
+  #footer>div {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+  }
+  #footer>div img {
+    width: 230px;
+    height: 58.69px;
+  }
+  #footer .footerInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .footerInfo ul {
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-color);
+    font-size: 13px;
+  }
+  #footer .footerInfo ul li:nth-child(2) {
+    margin: 0 23px 0 25px;
+  }
+  #footer .footerInfo > p:nth-child(2) {
+    font-size: 14px;
+    color: #737373;
+    margin: 28px 0 10px;
+  }
+  #footer .footerInfo .tel {
+    display: flex;
+    font-size: 14px;
+    color: #737373;
+    margin-bottom: 28px;
+  }
+  #footer .footerInfo > div p:first-child {
+    margin-right: 20px;
+  }
+  #footer .footerInfo .copy {
+    font-size: 12px;
+    position: absolute;
+    top: 275px;
+    color: #737373;
+  }
+}
+
+@media screen and (max-width:460px) {
+  #footer {
+    background-color: #f7f7f7;
+    height: 350px;
+    position: relative;
+  }
+  #footer .w1218 {
+    height: 112px;
+  }
+  #footer>div {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 140px;
+  }
+  #footer>div img {
+    width: 181px;
+    margin-top: 24px;
+  }
+  #footer .footerInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .footerInfo ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--main-color);
+    font-size: 14px;
+  }
+  #footer .footerInfo ul li:nth-child(1) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px
+  }
+  #footer .footerInfo ul li:nth-child(2) {
+    margin: 0 25px 0 0;
+    margin: 0 5.88% 0 0;
+  }
+  #footer .footerInfo > p:nth-child(2) {
+    font-size: 14px;
+    color: #737373;
+    margin: 28px 0 8px;
+  }
+  #footer .footerInfo .tel {
+    display: flex;
+    font-size: 14px;
+    color: #737373;
+    margin-bottom: 28px;
+  }
+  #footer .footerInfo > div p:first-child {
+    margin-right: 20px;
+  }
+  #footer .footerInfo .copy {
+    font-size: 12px;
+    position: absolute;
+    top: 300px;
+    color: #737373;
+  }
+}
+
+@media screen and (max-width:339px) {
+  #footer .footerInfo ul li:nth-child(1) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px
+  }
+  #footer .footerInfo ul li {
+    line-height: 20px;
+  }
 }

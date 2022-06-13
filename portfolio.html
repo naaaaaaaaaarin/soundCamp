@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sound Camp</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/portfolio_page.css">
+  <link rel="stylesheet" href="./css/fadein.css">
+
+  <script defer src="./js/header.js"></script>
+  <script defer src="./js/portfolio_page.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="w1250">
+      <div class="container">
+        <h1>
+          <a href="./index.html">
+            <img src="./images/soundcamp_logo.png" alt="사운드캠프 로고" />
+          </a>
+        </h1>
+        <nav class="pc">
+          <ul>
+            <li><a href="./company.html">회사소개</a></li>
+            <li><a href="./portfolio.html">포트폴리오</a></li>
+            <li><a href="./homepage.html">홈페이지</a></li>
+            <li><a href="#">영상</a></li>
+            <li><a href="#">선거용품</a></li>
+            <li><a href="./customer.html">고객센터</a></li>
+          </ul>
+        </nav>
+        <nav class="mobile">
+          <ul>
+            <li><a href="./company.html">회사소개</a></li>
+            <li><a href="./portfolio.html">포트폴리오</a></li>
+            <li><a href="./homepage.html">홈페이지</a></li>
+            <li><a href="#">영상</a></li>
+            <li><a href="#">선거용품</a></li>
+            <li><a href="./customer.html">고객센터</a></li>
+          </ul>
+        </nav>
+        <div class="ham">
+          <div class="menu"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="banner">
+      <h3>포트폴리오</h3>
+  </section>
+  
+  <section id="portfolio">
+    <div class="w1250 container">
+      <div class="text">
+        <p>since 2001</p>
+        <div class="line"></div>
+        <p>20년 음반제작 경력 사운드캠프는</p>
+        <p>&quot;음악의 <span>퀄리티</span>가 다릅니다.&quot;</p>
+      </div>
+      <ul id="title">
+        <li class="btn hover" onclick="filterSelection('radio')">라디오광고·방송광고</li>
+        <li class="btn" onclick="filterSelection('logoSong')">광고음악·로고송</li>
+        <li class="btn" onclick="filterSelection('schoolSong')">교가·사가</li>
+        <li class="btn" onclick="filterSelection('dubbing')">성우녹음·더빙</li>
+        <li class="btn" onclick="filterSelection('sound')">사운드디자인·음향</li>
+      </ul>
+      <div class="search">
+        <select id="selec">
+          <option value="제목">제목</option>
+          <option value="제작처">제작처</option>
+        </select>
+        <input type="text" id="keyword" placeholder="검색어를 입력하세요.">
+        <input type="button" onclick="search()" value="검색">
+      </div>
+      <div class="contents">
+        <div class="contentsBox contentsBox_js radio">
+          <div class="box">
+            <img src="./logo/logo01.png" alt="대한약사회로고">
+          </div>
+          <h4 class="ad_js">대한약사회 캠페인 광고</h4>
+          <p class="client_js">대한약사회</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo01.png" alt="대한약사회">
+                <div>
+                  <h4>대한약사회 캠페인 광고</h4>
+                  <p>대한약사회</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js radio">
+          <div class="box">
+            <img src="./logo/logo02.png" alt="교통안전공단 로고">
+          </div>
+          <h4 class="ad_js">
+            1333 전국택시통합콜서비스
+          </h4>
+          <p class="client_js">교통안전공단</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo02.png" alt="교통안전공단 로고">
+                <div>
+                  <h4>1333 전국택시통합콜서비스</h4>
+                  <p>교통안전공단</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js radio">
+          <div class="box">
+            <img src="./logo/logo03.png" alt="현대백화점그룹 로고">
+          </div>
+          <h4 class="ad_js">
+            현대위가드 정수기 라디오광고
+          </h4>
+          <p class="client_js">현대백화점그룹</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo01.png" alt="현대백화점그룹 로고">
+                <div>
+                  <h4>
+                    현대 위가드 정수기 라디오광고
+                  </h4>
+                  <p>현대백화점그룹</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js radio">
+          <div class="box">
+            <img src="./logo/logo04.png" alt="국방부 로고">
+          </div>
+          <h4 class="ad_js">
+            국방부 라디오 광고
+          </h4>
+          <p class="client_js">국방부</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo04.png" alt="국방부 로고">
+                <div>
+                  <h4>
+                    국방부 라디오 광고
+                  </h4>
+                  <p>국방부</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js logoSong">
+          <div class="box">
+            <img src="./logo/logo05.png" alt="기아대책 로고">
+          </div>
+          <h4 class="ad_js">
+            기아대책 테마송<br />
+            "다행이야! 이제 만나서"
+          </h4>
+          <p class="client_js">희망친구 기아대책</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo05.png" alt="기아대책 로고">
+                <div>
+                  <h4>
+                    기아대책 테마송 <br /> "다행이야! 이제 만나서"
+                  </h4>
+                  <p>희망친구 기아대책</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js logoSong">
+          <div class="box">
+            <img src="./logo/logo06.png" alt="현대오일뱅크 로고">
+          </div>
+          <h4 class="ad_js">어린이, 청소년 캠프송</h4>
+          <p class="client_js">현대오일뱅크</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo06.png" alt="국방부 로고">
+                <div>
+                  <h4>어린이, 청소년 캠프송</h4>
+                  <p>현대오일뱅크</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js dubbing">
+          <div class="box">
+            <img src="./logo/logo07.png" alt="CJ푸드빌 로고">
+          </div>
+          <h4 class="ad_js">뚜레쥬르 홍보멘트</h4>
+          <p class="client_js">CJ푸드빌</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo07.png" alt="CJ푸드빌 로고">
+                <div>
+                  <h4>뚜레쥬르 홍보멘트</h4>
+                  <p>CJ푸드빌</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js dubbing">
+          <div class="box">
+            <img src="./logo/logo08.png" alt="서울도시철도공사 로고">
+          </div>
+          <h4 class="ad_js">지하철 안내방송(국문)</h4>
+          <p class="client_js">서울도시철도공사</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo08.png" alt="서울도시철도공사 로고">
+                <div>
+                  <h4>지하철 안내방송(국문)</h4>
+                  <p>서울도시철도공사</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js logoSong">
+          <div class="box">
+            <img src="./logo/logo09.jpg" alt="전라북도무주군 로고">
+          </div>
+          <h4 class="ad_js">전북 무주군 이미지송</h4>
+          <p class="client_js">전라북도 무주군</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo09.jpg" alt="전라북도무주군 로고">
+                <div>
+                  <h4>전북 무주군 이미지송</h4>
+                  <p>전라북도 무주군</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js logoSong">
+          <div class="box">
+            <img src="./logo/logo10.png" alt="현대 로고">
+          </div>
+          <h4 class="ad_js">현대 위가드 광고 로고송</h4>
+          <p class="client_js">현대</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo10.png" alt="현대 로고">
+                <div>
+                  <h4>현대 위가드 광고 로고송</h4>
+                  <p>현대</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js logoSong">
+          <div class="box">
+            <img src="./logo/logo11.png" alt="홈플러스 로고">
+          </div>
+          <h4 class="ad_js">홈플러스 테마송</h4>
+          <p class="client_js">홈플러스</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo11.png" alt="홈플러스 로고">
+                <div>
+                  <h4>홈플러스 테마송</h4>
+                  <p>홈플러스</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js logoSong">
+          <div class="box">
+            <img src="./logo/logo12.jpg" alt="서울메트로 로고">
+          </div>
+          <h4 class="ad_js">서울메트로 공식 로고송</h4>
+          <p class="client_js">서울메트로</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo12.jpg" alt="서울메트로 로고">
+                <div>
+                  <h4>서울메트로 공식 로고송</h4>
+                  <p>서울메트로</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js logoSong">
+          <div class="box">
+            <img src="./logo/logo13.png" alt="한국광해관리공단 로고">
+          </div>
+          <h4 class="ad_js">한국광해관리공단 캠페인송</h4>
+          <p class="client_js">한국광해관리공단</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo13.png" alt="한국광해관리공단 로고">
+                <div>
+                  <h4>한국광해관리공단 캠페인송</h4>
+                  <p>한국광해관리공단</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js logoSong">
+          <div class="box">
+            <img src="./logo/logo14.png" alt="새마을금고 로고">
+          </div>
+          <h4 class="ad_js">MG새마을금고 기업 로고송</h4>
+          <p class="client_js">MG새마을금고</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo14.png" alt="새마을금고 로고">
+                <div>
+                  <h4>MG새마을금고 기업 로고송</h4>
+                  <p>MG새마을금고</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js logoSong">
+          <div class="box">
+            <img src="./logo/logo15.svg" alt="대구도시철도공사 로고">
+          </div>
+          <h4 class="ad_js">대구도시철도공사 공식 로고송</h4>
+          <p class="client_js">대구도시철도공사</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo15.svg" alt="대구도시철도공사 로고">
+                <div>
+                  <h4>대구도시철도공사 공식 로고송</h4>
+                  <p>대구도시철도공사</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js logoSong">
+          <div class="box">
+            <img src="./logo/logo16.png" alt="한국경제TV 로고">
+          </div>
+          <h4 class="ad_js">한국경제TV 시그널송</h4>
+          <p class="client_js">한국경제TV</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo16.png" alt="한국경제TV 로고">
+                <div>
+                  <h4>한국경제TV 시그널송</h4>
+                  <p>한국경제TV</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js logoSong">
+          <div class="box">
+            <img src="./logo/logo17.png" alt="한국산업인력공단 로고">
+          </div>
+          <h4 class="ad_js">산업인력공단 기업 이미지송</h4>
+          <p class="client_js">한국산업인력공단</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo17.png" alt="한국산업인력공단 로고">
+                <div>
+                  <h4>산업인력공단 기업 이미지송</h4>
+                  <p>한국산업인력공단</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js radio">
+          <div class="box">
+            <img src="./logo/logo18.png" alt="축구협회 로고">
+          </div>
+          <h4 class="ad_js">삼성 하우젠배 K리그 방송광고</h4>
+          <p class="client_js">대한축구협회</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo18.png" alt="축구협회 로고">
+                <div>
+                  <h4>삼성 하우젠배 K리그 방송광고</h4>
+                  <p>대한축구협회</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js schoolSong">
+          <div class="box">
+            <img src="./logo/logo19.png" alt="고속도로관리공단 로고">
+          </div>
+          <h4 class="ad_js">고속도로관리공단 공단가</h4>
+          <p class="client_js">고속도로관리공단</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo19.png" alt="고속도로관리공단 로고">
+                <div>
+                  <h4>고속도로관리공단 공단가</h4>
+                  <p>고속도로관리공단</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        <div class="contentsBox contentsBox_js schoolSong">
+          <div class="box">
+            <img src="./logo/logo20.png" alt="화신그룹 로고">
+          </div>
+          <h4 class="ad_js">화신그룹 사가</h4>
+          <p class="client_js">화신그룹</p>
+          <div class="audioOverlay hide">
+            <div class="audioBox">
+              <div class="audioText">
+                <img src="./logo/logo20.png" alt="화신그룹 로고">
+                <div>
+                  <h4>화신그룹 사가</h4>
+                  <p>화신그룹</p>
+                </div>
+              </div>
+              <audio controls>
+                <source src="./media/mp3_1.mp3">
+              </audio>
+              <img class="exit" src="./images/exit_16.png" alt="닫기">
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 07_Footer -->
+  <footer id="footer">
+    <div class="w1218">
+      <img src="./images/soundcamp_logo.png" alt="사운드캠프 로고">
+      <div class="footerInfo">
+        <ul>
+          <li>주식회사 씨디캠프</li>
+          <li>사업자등록번호 :120-86-31005</li>
+          <li>대표이사 : 안태준</li>
+        </ul>
+        <p>서울특별시 강남구 삼성동 25-23 삼화빌딩 지하</p>
+        <div class="tel">
+          <p>TEL. 02-548-1782</p>
+          <p>FAX. 02-549-5166</p>
+        </div>
+        <p class="copy">Copyright&copy;2022 SOUNDCAMP all right reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
