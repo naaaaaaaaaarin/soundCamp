@@ -11,5 +11,5 @@ $('nav.pc li').click(function () {
 // tab, mobile
 $('header .ham').click(function(){
   $('nav.mobile').stop().slideToggle(300);
-  if($('header .ham div').hasClass('menu'));
+  $(this).toggleClass('active');
 });
